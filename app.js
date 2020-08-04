@@ -1,4 +1,6 @@
 //Selectors
+const clear = document.querySelector(".clear");
+const dateElement = document.getElementById("date");
 const todoInput = document.querySelector('.todo-input');
 const todoButton = document.querySelector('.todo-button');
 const todoList = document.querySelector('.todo-list');
@@ -11,6 +13,12 @@ todoList.addEventListener("click", deleteCheck);
 filterOption.addEventListener("click", filterTodo);
 
 //Functions
+
+// Show todays date
+const options = {weekday : "long", month:"short", day:"numeric"};
+const today = new Date();
+dateElement.innerHTML = today.toLocaleDateString("en-US", options);
+
 function addTodo(event){
     //Prevent form from submities
     event.preventDefault();

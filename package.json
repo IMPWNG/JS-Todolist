@@ -1,0 +1,30 @@
+{
+  "name": "todolist",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+
+  "dependencies": {
+    "autoprefixer": "^9.8.6",
+    "postcss-cli": "^7.1.1",
+    "tailwindcss": "^1.6.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "postcss css/styles.css -o build/styles.css"
+    
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IMPWONG/todolist-project.git"
+  },
+  "keywords": [],
+  "author": " <Matisse> (example.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/IMPWONG/todolist-project/issues"
+  },
+  "homepage": "https://github.com/IMPWONG/todolist-project#readme"
+  
+}
